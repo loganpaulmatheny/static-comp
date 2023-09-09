@@ -3,12 +3,17 @@
   font-family: 'Roboto', sans-serif;
 }
 
+div p {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
-  align-items: flex-start;
+
   height: 100vh;
+  background-color: whitesmoke;
 }
 
 .nav-area {
@@ -17,6 +22,7 @@
   justify-content: flex-start;
   height: 20%;
   width: 100%;
+  background-color: rgb(43, 43, 43);
 }
 
 .nav-menu {
@@ -28,14 +34,11 @@
   width: 50%;
 }
 
-.dark-grey {
-  background-color: rgb(43, 43, 43);
-}
 
 .icon {
   height: 20px;
   width: 20px;
-  margin-right: 3px;
+  margin: 0px 3px 0px 3px;
 }
 
 .menu-button {
@@ -44,4 +47,124 @@
   background-color: transparent;
   color: grey;
   margin-bottom: 10px;
+}
+
+.login-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.login-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(114, 198, 218);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin: 0px 3px 0px 3px;
+}
+
+.company-name {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+
+#pageTitle {
+  color: grey;
+  font-size: 45px;
+}
+
+.white-text {
+  color: white;
+}
+
+.grid-area {
+  display: grid;
+  flex-direction: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+  width: 100%
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 300px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+}
+
+
+.icon-large {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  margin: 10px;
+}
+
+.views {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 10px 5px 0px 0px;
+  font-weight:900;
+  border-radius: 3px;
+  color: rgb(43, 43, 43);
+  background-color: rgba(255, 255, 255, .5);
+  height: 75px;
+}
+
+.view-text {
+  font-size: 25px;
+  margin: 0;
+}
+
+.view-number {
+  font-size: 35px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.name {
+  margin: 10px 0px 10px 15px;
+}
+
+.large-text {
+  font-size: large;
+}
+
+.smaller-text {
+  font-size: small;
 }
