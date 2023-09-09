@@ -1,5 +1,5 @@
 * {
-  border: solid green 1px;
+  /* border: solid green 1px; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -7,11 +7,14 @@ div p {
   margin: 0;
 }
 
+button {
+  border: 0;
+}
+
 .container {
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
-
   height: 100vh;
   background-color: whitesmoke;
 }
@@ -41,6 +44,12 @@ div p {
   margin: 0px 3px 0px 3px;
 }
 
+.small-icon {
+  height: 15px;
+  width: 15px;
+  margin: 0px 3px 0px 3px;
+}
+
 .menu-button {
   display: flex;
   align-items: center;
@@ -64,6 +73,7 @@ div p {
   align-items: center;
   background-color: transparent;
   color: rgb(114, 198, 218);
+  margin-top: 5px;
 }
 
 .logo {
@@ -104,8 +114,10 @@ div p {
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: 300px;
-}
+  height: auto;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
 
 .thumbnail {
   position: relative;
@@ -118,9 +130,8 @@ div p {
 .thumbnail-image {
   width: 100%;
   height: 100%;
-  opacity: 80%;
+  opacity: 50%;
 }
-
 
 .icon-large {
   height: 40px;
@@ -130,29 +141,32 @@ div p {
   left: 0;
   object-fit: cover;
   z-index: 1;
-  margin: 10px;
+  margin: 20px 0px 0px 15px;
 }
 
 .views {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   margin: 10px 5px 0px 0px;
   font-weight:900;
-  border-radius: 3px;
+  border-radius: 50%;
   color: rgb(43, 43, 43);
-  background-color: rgba(255, 255, 255, .5);
-  height: 75px;
+  height: 85px;
+  width: 85px
 }
 
 .view-text {
-  font-size: 25px;
+  text-align: center;
+  font-size: 20px;
   margin: 0;
 }
 
 .view-number {
-  font-size: 35px;
   margin-top: 5px;
   text-align: center;
 }
@@ -161,10 +175,46 @@ div p {
   margin: 10px 0px 10px 15px;
 }
 
+.smaller-text {
+  font-size: small;
+}
+
+.medium-text {
+  font-size: medium;
+}
+
 .large-text {
   font-size: large;
 }
 
-.smaller-text {
-  font-size: small;
+.giant-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.super-giant-text {
+  font-size: 40px;
+  font-weight: 700;}
+
+.link-block {
+  background-color: lightgrey;
+  color: darkslategray;
+  margin: 10px 15px 10px 15px;
+  padding: 15px;
+}
+
+.bottom-break {
+  height: 300px;
+}
+
+.lightblue-theme-color {
+  color: rgb(114,198,218);
+}
+
+.darkblue-theme-color {
+  color: rgb(73,148,236)
+}
+
+.pink-theme-color {
+  color: #ff006e;
 }
