@@ -18,10 +18,9 @@ Static-comp is a simple static wep page, to allow me to practice and continue to
 
 ## Wins
 - Used new tools to create wireframe and continue to increase speed.
-- Com
-
+- Completed the static web page in a relatively timely fashion.
 
 ## Challenges
-- Creating overlays of images.
-- Finding contrasting colors for 
+- Creating overlays of multiple images.
+- Finding contrasting colors and exercising good desing principles.
 
